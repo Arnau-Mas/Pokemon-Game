@@ -1,0 +1,17 @@
+.battleArena{
+    height: 70%;
+    width: 65%;
+    border: 20px solid rgb(43, 109, 253);
+    border-radius: 2rem;
+    background-color: beige;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.battleArena>img{
+    width: 20rem;
+    position: absolute;
+    top: -5rem;
+}
