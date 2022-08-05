@@ -1,7 +1,7 @@
 .battleArena{
     height: 70%;
     width: 65%;
-    border: 20px solid rgb(43, 109, 253);
+    border: 20px solid #0072BB;
     border-radius: 2rem;
     background-color: beige;
     position:relative;
