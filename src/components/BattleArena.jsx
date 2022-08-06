@@ -26,6 +26,10 @@ export function BattleArena(){
         })
     }, [])
 
+    function startGame(){
+        
+    }
+
     return (
         <div className="battleArena">
             <img src={logo} alt=""/>
@@ -33,8 +37,15 @@ export function BattleArena(){
                 <PokemonSelect list={pokeList} pokemon={pokemon1} setPokemon={setPokemon1} />
                 <img style={{position:"relative", height:"7rem", margin:"auto"}} src={vsLogo}/>
                 <PokemonSelect list={pokeList} pokemon={pokemon2} setPokemon={setPokemon2}/>
-                <button className="startButton">START</button>
+                <button onClick={startGame} className="startButton">START</button>
             </div>
         </div>
     )
 }
+
+/*     return (
+        <div className="battleArena">
+            <img src={logo} alt=""/>
+            <SelectScreen pokeList={pokeList} pokemon1={pokemon1} pokemon2={pokemon2} setPokemon1={setPokemon1} setPokemon2={setPokemon2} />
+        </div>
+    ) */
