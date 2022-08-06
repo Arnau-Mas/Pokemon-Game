@@ -33,6 +33,7 @@ export function BattleArena(){
                 <PokemonSelect list={pokeList} pokemon={pokemon1} setPokemon={setPokemon1} />
                 <img style={{position:"relative", height:"7rem", margin:"auto"}} src={vsLogo}/>
                 <PokemonSelect list={pokeList} pokemon={pokemon2} setPokemon={setPokemon2}/>
+                <button className="startButton">START</button>
             </div>
         </div>
     )
