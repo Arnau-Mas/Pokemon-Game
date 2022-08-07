@@ -12,7 +12,7 @@ export function PokemonFighter({pokemon, face, life, turn, setTurn, setDamage, s
     }
 
     useEffect(() => {
-        if(life<=pokemon.stats[0].base_stat/2 && life>pokemon.stats[0].base_stat/3){
+        if(life<=pokemon.stats[0].base_stat/2 && life>pokemon.stats[0].base_stat/4){
             setColor("orange")
         }else if(life<=pokemon.stats[0].base_stat/4){
             setColor("red")
