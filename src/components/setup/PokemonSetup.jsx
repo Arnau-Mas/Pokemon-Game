@@ -1,5 +1,5 @@
 import './PokemonSetup.css'
-import { BattleArena } from './BattleArena'
+import { BattleArena } from '../battle-arena/BattleArena'
 
 export function PokemonSetup(){
     return (

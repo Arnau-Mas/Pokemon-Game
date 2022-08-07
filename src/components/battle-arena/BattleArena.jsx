@@ -1,9 +1,9 @@
 import "./BattleArena.css"
-import logo from "../assets/pokemonLogo.png"
-import { PokemonSelect } from "./PokemonSelect"
+import logo from "../../assets/pokemonLogo.png"
+import { PokemonSelect } from "../select/PokemonSelect"
 import { useEffect, useState } from "react"
-import { SelectScreen } from "./SelectScreen"
-import { PokemonBattle } from "./PokemonBattle"
+import { SelectScreen } from "../select/SelectScreen"
+import { PokemonBattle } from "../battle/PokemonBattle"
 
 export function BattleArena(){
     const [pokeList, setPokeList] = useState([])

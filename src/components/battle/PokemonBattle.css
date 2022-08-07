@@ -14,3 +14,17 @@
     border: 2px rgb(52, 52, 52) dotted;
     border-radius: 1rem;
 }
+
+.hpBar{
+
+    height:1rem; 
+    background-color:rgba(66, 255, 66, 0.699);
+    border-radius: 1rem;
+}
+
+.hpBarContainer{
+    width:40%; 
+    height:1rem; 
+    border-radius:1rem; 
+    background-color:grey
+}

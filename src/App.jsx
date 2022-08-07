@@ -1,6 +1,6 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
-import { PokemonSetup } from './components/PokemonSetup'
+import { PokemonSetup } from './components/setup/PokemonSetup'
 
 function App() {
 

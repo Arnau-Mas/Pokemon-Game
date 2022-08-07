@@ -1,1 +1,1 @@
-Own project to practice with React
+Own project to practice with React using the Pokemon API https://pokeapi.co/
