@@ -10,10 +10,19 @@
 
 .moveContainer__move{
     padding: 1rem 1.5rem;
-    background-color: rgb(173, 173, 173);
-    border: 2px rgb(52, 52, 52) dotted;
+    background-color:rgba(255, 255, 255, 0.89);
+    border: 2px rgba(52, 52, 52, 0.411) solid;
     border-radius: 1rem;
     color: rgb(41, 41, 41);
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+.moveContainer__move:hover{
+    border: 2px solid rgb(56, 197, 56);
+    background-color: rgba(120, 252, 138, 0.801);
+    transition: background-color .1s linear;
+    cursor: pointer;
 }
 
 .hpBar{
