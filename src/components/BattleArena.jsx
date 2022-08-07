@@ -1,13 +1,15 @@
 import "./BattleArena.css"
 import logo from "../assets/pokemonLogo.png"
-import vsLogo from "../assets/vsLogo.png"
 import { PokemonSelect } from "./PokemonSelect"
 import { useEffect, useState } from "react"
+import { SelectScreen } from "./SelectScreen"
+import { PokemonBattle } from "./PokemonBattle"
 
 export function BattleArena(){
     const [pokeList, setPokeList] = useState([])
     const [pokemon1, setPokemon1] = useState({});
     const [pokemon2, setPokemon2] = useState({});
+    const [arena, setArena] = useState(false)
 
     useEffect(() => {
         fetch("https://pokeapi.co/api/v2/pokemon/")
@@ -26,19 +28,15 @@ export function BattleArena(){
         })
     }, [])
 
-    function startGame(){
-        
-    }
-
     return (
         <div className="battleArena">
             <img src={logo} alt=""/>
-            <div style={{width:"100%", height:"100%", display:"flex", position:"absolute"}}>
-                <PokemonSelect list={pokeList} pokemon={pokemon1} setPokemon={setPokemon1} />
-                <img style={{position:"relative", height:"7rem", margin:"auto"}} src={vsLogo}/>
-                <PokemonSelect list={pokeList} pokemon={pokemon2} setPokemon={setPokemon2}/>
-                <button onClick={startGame} className="startButton">START</button>
-            </div>
+            {arena && pokemon1 && pokemon2 && pokeList.some(pokemon => pokemon.name === pokemon1.name) && pokeList.some(pokemon => pokemon.name === pokemon2.name) ?
+                <PokemonBattle list={pokeList} pokemon1={pokemon1} pokemon2={pokemon2} setPokemon1={setPokemon1} setPokemon2={setPokemon2} setArena={setArena}/>
+            :
+                <SelectScreen list={pokeList} pokemon1={pokemon1} pokemon2={pokemon2} setPokemon1={setPokemon1} setPokemon2={setPokemon2} setArena={setArena} />
+             }
+            
         </div>
     )
 }
