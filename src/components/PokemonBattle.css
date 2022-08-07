@@ -7,3 +7,10 @@
     justify-content: center;
     gap: 1rem;
 }
+
+.moveContainer__move{
+    padding: 1rem 1.5rem;
+    background-color: rgb(173, 173, 173);
+    border: 2px rgb(52, 52, 52) dotted;
+    border-radius: 1rem;
+}
