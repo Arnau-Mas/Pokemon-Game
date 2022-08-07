@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 .moveContainer__move{
@@ -18,11 +18,16 @@
     font-size: 20px;
 }
 
-.moveContainer__move:hover{
+.moveContainer__move:hover:enabled{
     border: 2px solid rgb(56, 197, 56);
     background-color: rgba(120, 252, 138, 0.801);
     transition: background-color .1s linear;
     cursor: pointer;
+}
+
+.moveContainer__move:disabled{
+    border: 2px solid rgb(194, 194, 194);
+    background-color: rgba(190, 190, 190, 0.801);
 }
 
 .hpBar{
