@@ -1,4 +1,4 @@
-Own project to practice with React using the <a href="https://pokeapi.co">PokeAPI</a> / <br>
+Own project to practice with React using the <a href="https://pokeapi.co">PokeAPI</a><br>
 (Not responsive. Only desktop) made in less than 8h
 
 DEMO: https://willowy-narwhal-fa84f3.netlify.app/ 
