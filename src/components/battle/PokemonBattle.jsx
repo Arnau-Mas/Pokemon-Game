@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import "./PokemonBattle.css"
 import { PokemonFighter } from "./PokemonFighter"
 
-export function PokemonBattle({pokemon1, pokemon2}){
+export function PokemonBattle({pokemon1, pokemon2, setArena}){
     const lifePokemon1 = pokemon1.stats[0].base_stat;
     const lifePokemon2 = pokemon2.stats[0].base_stat;
     const [life1, setLife1] = useState(pokemon1.stats[0].base_stat)
@@ -32,6 +32,7 @@ export function PokemonBattle({pokemon1, pokemon2}){
                 <div style={{position:"relative", fontSize:"24px", top:"10rem", height:"10rem", width:"9rem"}}>
                     <p>The Winner</p>
                    <p style={{backgroundColor:"green", textAlign:"center", color:"white"}}>{life1<=0 ? "🢂" : "🢀"}</p>
+                   <button className="startButton" onClick={() => setArena(false)}>BACK</button>
                 </div>
 
             }

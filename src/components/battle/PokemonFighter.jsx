@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 
 export function PokemonFighter({pokemon, face, life, turn, setTurn, setDamage, setLife, barPercent}){
-    console.log(pokemon.name, barPercent)
     const [color, setColor] = useState("rgba(66, 255, 66, 0.699)");
     const moves = pokemon.moves;
 
